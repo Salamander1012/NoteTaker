@@ -60,7 +60,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.96070355176925659" green="0.96083790063858032" blue="0.96066111326217651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bRz-wy-Bml" firstAttribute="centerX" secondItem="1gR-cP-d5T" secondAttribute="centerX" id="LpQ-rQ-Xo2"/>
                             <constraint firstItem="bRz-wy-Bml" firstAttribute="top" secondItem="1gR-cP-d5T" secondAttribute="top" constant="-10" id="RXy-q8-kvb"/>
@@ -87,16 +87,36 @@
             </objects>
             <point key="canvasLocation" x="741.60000000000002" y="371.96401799100454"/>
         </scene>
-        <!--View Controller-->
+        <!--Editor View Controller-->
         <scene sceneID="fnB-a5-gSC">
             <objects>
-                <viewController id="VTa-0X-Jja" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lMC-HH-njf">
+                <viewController id="VTa-0X-Jja" customClass="EditorViewController" customModule="NoteTaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="lMC-HH-njf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPK-mj-UIJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.96070355176925659" green="0.96083790063858032" blue="0.96066111326217651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96070355176925659" green="0.96083790063858032" blue="0.96066111326217651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.9607035518" green="0.96083790059999996" blue="0.96066111330000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tPK-mj-UIJ" firstAttribute="top" secondItem="gw1-Pc-2n6" secondAttribute="top" id="TT7-gT-xTO"/>
+                            <constraint firstItem="gw1-Pc-2n6" firstAttribute="trailing" secondItem="tPK-mj-UIJ" secondAttribute="trailing" id="Tf8-uB-LeG"/>
+                            <constraint firstItem="tPK-mj-UIJ" firstAttribute="leading" secondItem="gw1-Pc-2n6" secondAttribute="leading" id="UCc-0W-bUB"/>
+                            <constraint firstItem="gw1-Pc-2n6" firstAttribute="bottom" secondItem="tPK-mj-UIJ" secondAttribute="bottom" id="hKt-ba-g4p"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gw1-Pc-2n6"/>
                     </view>
+                    <connections>
+                        <outlet property="webview" destination="tPK-mj-UIJ" id="zIQ-8X-xDl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSs-61-L8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,19 +129,6 @@
                     <view key="view" contentMode="scaleToFill" id="zes-Mg-dCh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuX-Md-xtn">
-                                <rect key="frame" x="135" y="105" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rk4-Dx-lCo">
-                                <rect key="frame" x="98" y="352" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="0.9607035518" green="0.96083790059999996" blue="0.96066111330000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="AAk-UE-c1r"/>
                     </view>

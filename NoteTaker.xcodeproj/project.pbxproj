@@ -13,6 +13,25 @@
 		74876236203CA5E70039F14F /* NoteTaker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74876234203CA5E70039F14F /* NoteTaker.xcdatamodeld */; };
 		74876238203CA5E70039F14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74876237203CA5E70039F14F /* Assets.xcassets */; };
 		7487623B203CA5E70039F14F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74876239203CA5E70039F14F /* LaunchScreen.storyboard */; };
+		74876247203CBE6A0039F14F /* NotoSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74876243203CBE690039F14F /* NotoSerif-Italic.ttf */; };
+		74876248203CBE6A0039F14F /* NotoSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74876244203CBE690039F14F /* NotoSerif-Regular.ttf */; };
+		74876249203CBE6A0039F14F /* NotoSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74876245203CBE6A0039F14F /* NotoSerif-Bold.ttf */; };
+		7487624A203CBE6A0039F14F /* NotoSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74876246203CBE6A0039F14F /* NotoSerif-BoldItalic.ttf */; };
+		74876255203CBE820039F14F /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7487624B203CBE810039F14F /* Lato-Bold.ttf */; };
+		74876256203CBE820039F14F /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7487624C203CBE810039F14F /* Lato-LightItalic.ttf */; };
+		74876257203CBE820039F14F /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7487624D203CBE810039F14F /* Lato-Regular.ttf */; };
+		74876258203CBE820039F14F /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7487624E203CBE810039F14F /* Lato-Light.ttf */; };
+		74876259203CBE820039F14F /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7487624F203CBE810039F14F /* Lato-BlackItalic.ttf */; };
+		7487625A203CBE820039F14F /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74876250203CBE810039F14F /* Lato-BoldItalic.ttf */; };
+		7487625B203CBE820039F14F /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74876251203CBE810039F14F /* Lato-Black.ttf */; };
+		7487625C203CBE820039F14F /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74876252203CBE810039F14F /* Lato-Hairline.ttf */; };
+		7487625D203CBE820039F14F /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74876253203CBE820039F14F /* Lato-HairlineItalic.ttf */; };
+		7487625E203CBE820039F14F /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74876254203CBE820039F14F /* Lato-Italic.ttf */; };
+		74876262203CC5190039F14F /* CreatetionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74876261203CC5190039F14F /* CreatetionViewController.swift */; };
+		74EA99D3203F470200FA23F1 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA99D2203F470200FA23F1 /* EditorViewController.swift */; };
+		74EA99DB203F53D400FA23F1 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 74EA99D8203F53D400FA23F1 /* index.html */; };
+		74EA99DC203F53D400FA23F1 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 74EA99D9203F53D400FA23F1 /* script.js */; };
+		74EA99DD203F53D400FA23F1 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 74EA99DA203F53D400FA23F1 /* style.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +43,25 @@
 		74876237203CA5E70039F14F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7487623A203CA5E70039F14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7487623C203CA5E70039F14F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74876243203CBE690039F14F /* NotoSerif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSerif-Italic.ttf"; path = "fonts/NotoSerif-Italic.ttf"; sourceTree = "<group>"; };
+		74876244203CBE690039F14F /* NotoSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSerif-Regular.ttf"; path = "fonts/NotoSerif-Regular.ttf"; sourceTree = "<group>"; };
+		74876245203CBE6A0039F14F /* NotoSerif-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSerif-Bold.ttf"; path = "fonts/NotoSerif-Bold.ttf"; sourceTree = "<group>"; };
+		74876246203CBE6A0039F14F /* NotoSerif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSerif-BoldItalic.ttf"; path = "fonts/NotoSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7487624B203CBE810039F14F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		7487624C203CBE810039F14F /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		7487624D203CBE810039F14F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		7487624E203CBE810039F14F /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
+		7487624F203CBE810039F14F /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		74876250203CBE810039F14F /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		74876251203CBE810039F14F /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
+		74876252203CBE810039F14F /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Hairline.ttf"; path = "fonts/Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		74876253203CBE820039F14F /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-HairlineItalic.ttf"; path = "fonts/Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		74876254203CBE820039F14F /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		74876261203CC5190039F14F /* CreatetionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatetionViewController.swift; sourceTree = "<group>"; };
+		74EA99D2203F470200FA23F1 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
+		74EA99D8203F53D400FA23F1 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		74EA99D9203F53D400FA23F1 /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		74EA99DA203F53D400FA23F1 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +94,12 @@
 		7487622C203CA5E70039F14F /* NoteTaker */ = {
 			isa = PBXGroup;
 			children = (
+				74EA99D7203F53D400FA23F1 /* web */,
+				74876242203CBE330039F14F /* fonts */,
 				7487622D203CA5E70039F14F /* AppDelegate.swift */,
 				7487622F203CA5E70039F14F /* ViewController.swift */,
+				74876261203CC5190039F14F /* CreatetionViewController.swift */,
+				74EA99D2203F470200FA23F1 /* EditorViewController.swift */,
 				74876231203CA5E70039F14F /* Main.storyboard */,
 				74876237203CA5E70039F14F /* Assets.xcassets */,
 				74876239203CA5E70039F14F /* LaunchScreen.storyboard */,
@@ -66,6 +108,37 @@
 			);
 			path = NoteTaker;
 			sourceTree = "<group>";
+		};
+		74876242203CBE330039F14F /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				74876251203CBE810039F14F /* Lato-Black.ttf */,
+				7487624F203CBE810039F14F /* Lato-BlackItalic.ttf */,
+				7487624B203CBE810039F14F /* Lato-Bold.ttf */,
+				74876250203CBE810039F14F /* Lato-BoldItalic.ttf */,
+				74876252203CBE810039F14F /* Lato-Hairline.ttf */,
+				74876253203CBE820039F14F /* Lato-HairlineItalic.ttf */,
+				74876254203CBE820039F14F /* Lato-Italic.ttf */,
+				7487624E203CBE810039F14F /* Lato-Light.ttf */,
+				7487624C203CBE810039F14F /* Lato-LightItalic.ttf */,
+				7487624D203CBE810039F14F /* Lato-Regular.ttf */,
+				74876245203CBE6A0039F14F /* NotoSerif-Bold.ttf */,
+				74876246203CBE6A0039F14F /* NotoSerif-BoldItalic.ttf */,
+				74876243203CBE690039F14F /* NotoSerif-Italic.ttf */,
+				74876244203CBE690039F14F /* NotoSerif-Regular.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		74EA99D7203F53D400FA23F1 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				74EA99D8203F53D400FA23F1 /* index.html */,
+				74EA99D9203F53D400FA23F1 /* script.js */,
+				74EA99DA203F53D400FA23F1 /* style.css */,
+			);
+			path = web;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -126,9 +199,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7487625B203CBE820039F14F /* Lato-Black.ttf in Resources */,
+				7487625E203CBE820039F14F /* Lato-Italic.ttf in Resources */,
+				74876248203CBE6A0039F14F /* NotoSerif-Regular.ttf in Resources */,
+				74EA99DB203F53D400FA23F1 /* index.html in Resources */,
+				7487625D203CBE820039F14F /* Lato-HairlineItalic.ttf in Resources */,
+				74876249203CBE6A0039F14F /* NotoSerif-Bold.ttf in Resources */,
+				74EA99DC203F53D400FA23F1 /* script.js in Resources */,
+				74876247203CBE6A0039F14F /* NotoSerif-Italic.ttf in Resources */,
+				74876258203CBE820039F14F /* Lato-Light.ttf in Resources */,
 				7487623B203CA5E70039F14F /* LaunchScreen.storyboard in Resources */,
+				7487624A203CBE6A0039F14F /* NotoSerif-BoldItalic.ttf in Resources */,
 				74876238203CA5E70039F14F /* Assets.xcassets in Resources */,
 				74876233203CA5E70039F14F /* Main.storyboard in Resources */,
+				74876259203CBE820039F14F /* Lato-BlackItalic.ttf in Resources */,
+				74876257203CBE820039F14F /* Lato-Regular.ttf in Resources */,
+				7487625C203CBE820039F14F /* Lato-Hairline.ttf in Resources */,
+				74876256203CBE820039F14F /* Lato-LightItalic.ttf in Resources */,
+				74EA99DD203F53D400FA23F1 /* style.css in Resources */,
+				74876255203CBE820039F14F /* Lato-Bold.ttf in Resources */,
+				7487625A203CBE820039F14F /* Lato-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +231,8 @@
 			files = (
 				74876236203CA5E70039F14F /* NoteTaker.xcdatamodeld in Sources */,
 				74876230203CA5E70039F14F /* ViewController.swift in Sources */,
+				74876262203CC5190039F14F /* CreatetionViewController.swift in Sources */,
+				74EA99D3203F470200FA23F1 /* EditorViewController.swift in Sources */,
 				7487622E203CA5E70039F14F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,9 +373,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3YP8P798R;
 				INFOPLIST_FILE = NoteTaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salmanfakhri.NoteTaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,9 +390,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3YP8P798R;
 				INFOPLIST_FILE = NoteTaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salmanfakhri.NoteTaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

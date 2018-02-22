@@ -1,0 +1,14 @@
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+body {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: 'Noto Serif', serif;
+  background-color: #F5F5F5;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+}

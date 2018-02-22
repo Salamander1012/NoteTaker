@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreatetionViewController: UIViewController {
+class CreatetionViewController: UIViewController, UIGestureRecognizerDelegate {
     
     
     
@@ -20,9 +20,17 @@ class CreatetionViewController: UIViewController {
         self.createNoteView.layer.shadowRadius = 7.0
         self.createNoteView.layer.shadowColor = UIColor.lightGray.cgColor
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.tap(_:)))
+        tap.delegate = self
+        createNoteView.addGestureRecognizer(tap)
+        
         
     }
     
+    @objc func tap(_ gestureRecognizer: UITapGestureRecognizer) {
+        print("printing")
+        performSegue(withIdentifier: "showEditor", sender: self)
+    }
 
 
     override func didReceiveMemoryWarning() {

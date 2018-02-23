@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -96,31 +95,80 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPK-mj-UIJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
                                 <color key="backgroundColor" red="0.96070355176925659" green="0.96083790063858032" blue="0.96066111326217651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xP-Wa-HkM">
+                                <rect key="frame" x="0.0" y="553" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elm-iT-pXN">
+                                        <rect key="frame" x="20" y="10.5" width="30" height="29"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                        <state key="normal" title="H1">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="h1Pressed:" destination="VTa-0X-Jja" eventType="touchUpInside" id="xBG-Xi-kqe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hya-3U-6c0">
+                                        <rect key="frame" x="70" y="10.5" width="30" height="29"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                        <state key="normal" title="H2">
+                                            <color key="titleColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="h2Pressed:" destination="VTa-0X-Jja" eventType="touchUpInside" id="3u6-uF-h0F"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ix-yT-aSD">
+                                        <rect key="frame" x="120" y="10.5" width="30" height="29"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                        <state key="normal" title="LIST">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="listPressed:" destination="VTa-0X-Jja" eventType="touchUpInside" id="vTV-Xc-ZcR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96079081296920776" green="0.9607728123664856" blue="0.96078497171401978" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="2ix-yT-aSD" firstAttribute="leading" secondItem="hya-3U-6c0" secondAttribute="trailing" constant="20" id="1yM-lP-O5b"/>
+                                    <constraint firstItem="2ix-yT-aSD" firstAttribute="centerY" secondItem="6xP-Wa-HkM" secondAttribute="centerY" id="2Vb-xH-AvQ"/>
+                                    <constraint firstItem="elm-iT-pXN" firstAttribute="leading" secondItem="6xP-Wa-HkM" secondAttribute="leading" constant="20" id="BsV-dV-bcZ"/>
+                                    <constraint firstItem="hya-3U-6c0" firstAttribute="centerY" secondItem="6xP-Wa-HkM" secondAttribute="centerY" id="CVO-72-dsp"/>
+                                    <constraint firstAttribute="height" constant="50" id="JuQ-Tl-AEb"/>
+                                    <constraint firstItem="hya-3U-6c0" firstAttribute="leading" secondItem="elm-iT-pXN" secondAttribute="trailing" constant="20" id="aKt-VP-CPW"/>
+                                    <constraint firstItem="elm-iT-pXN" firstAttribute="centerY" secondItem="6xP-Wa-HkM" secondAttribute="centerY" id="uDy-Qy-sS9"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96070355176925659" green="0.96083790063858032" blue="0.96066111326217651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.9607035518" green="0.96083790059999996" blue="0.96066111330000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gw1-Pc-2n6" firstAttribute="trailing" secondItem="6xP-Wa-HkM" secondAttribute="trailing" id="7x7-aO-cAN"/>
+                            <constraint firstItem="6xP-Wa-HkM" firstAttribute="top" secondItem="tPK-mj-UIJ" secondAttribute="bottom" id="RJT-4h-PSQ"/>
                             <constraint firstItem="tPK-mj-UIJ" firstAttribute="top" secondItem="gw1-Pc-2n6" secondAttribute="top" id="TT7-gT-xTO"/>
                             <constraint firstItem="gw1-Pc-2n6" firstAttribute="trailing" secondItem="tPK-mj-UIJ" secondAttribute="trailing" id="Tf8-uB-LeG"/>
                             <constraint firstItem="tPK-mj-UIJ" firstAttribute="leading" secondItem="gw1-Pc-2n6" secondAttribute="leading" id="UCc-0W-bUB"/>
-                            <constraint firstItem="gw1-Pc-2n6" firstAttribute="bottom" secondItem="tPK-mj-UIJ" secondAttribute="bottom" id="hKt-ba-g4p"/>
+                            <constraint firstItem="6xP-Wa-HkM" firstAttribute="leading" secondItem="gw1-Pc-2n6" secondAttribute="leading" id="dM7-SQ-euJ"/>
+                            <constraint firstItem="6xP-Wa-HkM" firstAttribute="bottom" secondItem="gw1-Pc-2n6" secondAttribute="bottom" id="jVi-PS-cOW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gw1-Pc-2n6"/>
                     </view>
                     <connections>
+                        <outlet property="toolBar" destination="6xP-Wa-HkM" id="K8R-Ka-7Rr"/>
                         <outlet property="webview" destination="tPK-mj-UIJ" id="zIQ-8X-xDl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSs-61-L8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473" y="372"/>
+            <point key="canvasLocation" x="1472.8" y="371.96401799100454"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eQ8-AP-wF1">

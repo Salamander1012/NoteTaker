@@ -94,14 +94,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPK-mj-UIJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
-                                <color key="backgroundColor" red="0.96070355176925659" green="0.96083790063858032" blue="0.96066111326217651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xP-Wa-HkM">
                                 <rect key="frame" x="0.0" y="553" width="375" height="50"/>
                                 <subviews>
@@ -135,6 +127,17 @@
                                             <action selector="listPressed:" destination="VTa-0X-Jja" eventType="touchUpInside" id="vTV-Xc-ZcR"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKi-Pt-Q4t">
+                                        <rect key="frame" x="314" y="10.5" width="41" height="29"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                        <state key="normal" title="DONE">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="donePressed:" destination="VTa-0X-Jja" eventType="touchUpInside" id="tR5-WF-X0E"/>
+                                            <action selector="listPressed:" destination="VTa-0X-Jja" eventType="touchUpInside" id="8Gh-xH-RZn"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96079081296920776" green="0.9607728123664856" blue="0.96078497171401978" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -142,28 +145,37 @@
                                     <constraint firstItem="2ix-yT-aSD" firstAttribute="centerY" secondItem="6xP-Wa-HkM" secondAttribute="centerY" id="2Vb-xH-AvQ"/>
                                     <constraint firstItem="elm-iT-pXN" firstAttribute="leading" secondItem="6xP-Wa-HkM" secondAttribute="leading" constant="20" id="BsV-dV-bcZ"/>
                                     <constraint firstItem="hya-3U-6c0" firstAttribute="centerY" secondItem="6xP-Wa-HkM" secondAttribute="centerY" id="CVO-72-dsp"/>
+                                    <constraint firstAttribute="trailing" secondItem="HKi-Pt-Q4t" secondAttribute="trailing" constant="20" id="DPf-Qy-jBA"/>
                                     <constraint firstAttribute="height" constant="50" id="JuQ-Tl-AEb"/>
                                     <constraint firstItem="hya-3U-6c0" firstAttribute="leading" secondItem="elm-iT-pXN" secondAttribute="trailing" constant="20" id="aKt-VP-CPW"/>
+                                    <constraint firstItem="HKi-Pt-Q4t" firstAttribute="centerY" secondItem="6xP-Wa-HkM" secondAttribute="centerY" id="oOl-EH-gkw"/>
                                     <constraint firstItem="elm-iT-pXN" firstAttribute="centerY" secondItem="6xP-Wa-HkM" secondAttribute="centerY" id="uDy-Qy-sS9"/>
                                 </constraints>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cC7-qf-OjX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.96070355176925659" green="0.96083790063858032" blue="0.96066111326217651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.9607035518" green="0.96083790059999996" blue="0.96066111330000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6xP-Wa-HkM" firstAttribute="top" secondItem="cC7-qf-OjX" secondAttribute="bottom" id="2JO-JC-VlA"/>
+                            <constraint firstItem="gw1-Pc-2n6" firstAttribute="trailing" secondItem="cC7-qf-OjX" secondAttribute="trailing" id="5Qy-95-8bg"/>
+                            <constraint firstItem="cC7-qf-OjX" firstAttribute="top" secondItem="gw1-Pc-2n6" secondAttribute="top" id="7eI-9F-GDW"/>
                             <constraint firstItem="gw1-Pc-2n6" firstAttribute="trailing" secondItem="6xP-Wa-HkM" secondAttribute="trailing" id="7x7-aO-cAN"/>
-                            <constraint firstItem="6xP-Wa-HkM" firstAttribute="top" secondItem="tPK-mj-UIJ" secondAttribute="bottom" id="RJT-4h-PSQ"/>
-                            <constraint firstItem="tPK-mj-UIJ" firstAttribute="top" secondItem="gw1-Pc-2n6" secondAttribute="top" id="TT7-gT-xTO"/>
-                            <constraint firstItem="gw1-Pc-2n6" firstAttribute="trailing" secondItem="tPK-mj-UIJ" secondAttribute="trailing" id="Tf8-uB-LeG"/>
-                            <constraint firstItem="tPK-mj-UIJ" firstAttribute="leading" secondItem="gw1-Pc-2n6" secondAttribute="leading" id="UCc-0W-bUB"/>
                             <constraint firstItem="6xP-Wa-HkM" firstAttribute="leading" secondItem="gw1-Pc-2n6" secondAttribute="leading" id="dM7-SQ-euJ"/>
                             <constraint firstItem="6xP-Wa-HkM" firstAttribute="bottom" secondItem="gw1-Pc-2n6" secondAttribute="bottom" id="jVi-PS-cOW"/>
+                            <constraint firstItem="cC7-qf-OjX" firstAttribute="leading" secondItem="gw1-Pc-2n6" secondAttribute="leading" id="lLf-US-ifN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gw1-Pc-2n6"/>
                     </view>
                     <connections>
+                        <outlet property="textView" destination="cC7-qf-OjX" id="UkN-rx-yx4"/>
                         <outlet property="toolBar" destination="6xP-Wa-HkM" id="K8R-Ka-7Rr"/>
-                        <outlet property="webview" destination="tPK-mj-UIJ" id="zIQ-8X-xDl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NSs-61-L8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
